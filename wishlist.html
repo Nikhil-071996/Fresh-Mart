@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | Fresh Mart | Grocery Store</title>
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Costom css link -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!-- Custom Font Awesome Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom Script link  -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+   <!-- Header Starts  -->
+<header class="header">
+    <div class="left-section">
+        <a href="index.html" style="text-decoration: none;">
+            <div class="icon">
+                <i class="fa-brands fa-opencart"></i>
+                <h3>Fresh Mart</h3>
+            </div>
+        </a>
+    </div>
+    <div class="right-section">
+        <a href="index.html">
+            <div class="wishlist">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </a>
+        <div class="login-btn" id="login-btn">
+            <i class="fa-regular fa-user"></i>
+            <div class="login">
+                <span>Hello, Sign-in</span>
+                <h5>My Account</h5>
+            </div>
+        </div>
+        <div class="shopping-cart hide">
+            <i class="fa-solid fa-cart-shopping">
+                <span class="no-of-items-in-cart"></span>
+            </i>
+            <div class="cart-info">
+                <span>My Cart</span>
+                <div class="cart-price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                    <span id="price"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Section for smaller Screen Devices starts -->
+
+        <div class="menu-in-small-screen">
+            <i class="fa-solid fa-bars"></i>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="account-info hide" id="menu-account">
+                    <div class="image-container">
+                        <img src="Images/User-Img.png" alt="">
+                    </div>
+                    <div class="user-name ">
+                        <h4>Hello ,</h4>
+                    </div>
+                    <div class="user-name">
+                        <h4 id="user-name-menu"></h4>
+                    </div>
+                    <button class="btn log-out" id="logout-button">Log out</button>
+                </div>
+                <div class="info-section" >
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <div>
+                        <h6>Support</h6>
+                        <span>+91 123456789</span>
+                    </div>
+                </div> 
+                <div class="info-section">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <h6>E-mail</h6>
+                        <div>customer123@gmail.com</div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Section for smaller Screen Devices Ends -->
+
+    </div>        
+</header>
+<!-- Header Ends -->
+
+<!-- Login Modal Starts  -->
+
+<section class="login-overlay hidden">
+    <div class="overlay"></div>
+    <div class="login-modal">
+        <div class="login-head">
+            <button id="sign-in-btn"><i class="fa-regular fa-user"></i>Sign In</button>
+            <button id="sign-up-btn"><i class="fa-solid fa-lock"></i>Sign Up</button>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="login-body">
+            <form id="sign-in">
+                <div class="input">
+                    <label for="email1">Email Address</label>
+                    <input type="email" id="email1" required>
+                </div>
+                <div class="input">
+                    <label for="password1">Password</label>
+                    <input type="password" id="password1">
+                    <i class="fa-solid fa-eye" id="show-password-eye" required></i>
+                </div>
+                <div class="forget-pass">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button class="btn" type="submit">Sign in</button>
+            </form>
+            <form id="sign-up" class="hidden">
+                <div class="input">
+                    <label for="name1">Full Name</label>
+                    <input type="text" id="name1" required>
+                </div>
+                <div class="input">
+                    <label for="email2">Email Address</label>
+                    <input type="email" id="email2">
+                </div>
+                <div class="input">
+                    <label for="password2">Password</label>
+                    <input type="password" id="password2" required>
+                    <i class="fa-solid fa-eye" id="show-password-eye-2"></i>
+                    <span style="color: red;" class="hide" id="password-length">Password should be 8 to 10 Characters</span>
+                </div>
+                <div class="input">
+                    <label for="con-password">Confirm Password</label>
+                    <input type="password" id="con-password" required>
+                    <i class="fa-solid fa-eye" id="show-conf-password-eye"></i>
+                    <span style="color: red;" class="hide" id="password-match">Password and Confirm Password Should Match</span>
+                </div>
+                <button class="btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Login Modal Ends  -->
+
+<!-- Login First Starts  -->
+
+<div class="login-first-msg-popup hide">
+    <h1>Please , SignUp First</h1>
+    <h2>No Account Found</h2>
+</div>
+
+<!-- Login First Ends  -->
+
+    <!-- Main Body Section Starts  -->
+
+    <main class="main" id="main">
+        <div class="side-fixed-section">
+            <div class="account-info hide" id="account-info">
+                <div class="image-container">
+                    <img src="Images/Fresh Potato.webp" alt="">
+                </div>
+                <div class="user-name">
+                    <h4>Hello ,</h4>
+                </div>
+                <div class="user-name">
+                    <h4 id="user-name"></h4>
+                </div>
+                <button class="btn log-out" id="logout-button">Log out</button>
+            </div>
+            <div class="login-first" id="login-first">
+                <div class="login-btn" id="login-btn-2">
+                <i class="fa-regular fa-user"></i>
+                <div class="login">
+                    <span>Hello, Sign-in</span>
+                    <h5>My Account</h5>
+                </div>
+            </div>
+            </div>
+            <div class="info-section">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <div>
+                    <h6>Support</h6>
+                    <span>+91 123456789</span>
+                </div>
+            </div>
+            <div class="info-section">
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                    <h6>E-mail</h6>
+                    <div>customer123@gmail.com</div>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="center-body-section">
+            <div class="head">
+                <h1>Your WishList</h1>
+            </div>
+            <div class="wishList-items hide" id="wishList-items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="wish-list-items">
+                        <!-- <tr>
+                            <td class="img-container">
+                                <img src="Images/24 Mantra Organic Corn Daliya Maize Daliya, Makke ka Atta, Mokkajonna.webp" alt="">
+                            </td>
+                            <td>Product Name</td>
+                            <td>Price</td>
+                            <td>
+                                <button class="add-to-cart btn"><i class="fa-solid fa-cart-plus"></i></button>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-xmark" id="remove-item-from-wislist"></i>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="Enpty-Wishlist">
+                <h1>Your WishList is Empty</h1>
+            </div>
+        </div>
+        
+    </main>
+    <!-- Main Body Section Ends  -->
+
+    <!-- Cart Section Starts  -->
+    <section class="cart" id="cart">
+        <div class="item-container">
+            <!-- <div class="items">
+                <div class="img-container">
+                    <img src="Images/24 Mantra Organic Corn Daliya Maize Daliya, Makke ka Atta, Mokkajonna.webp" alt="">
+                </div>
+                <div class="cart-info">
+                    <h2>name of Product</h2>
+                    <div id="amount"><i class="fa-solid fa-indian-rupee-sign"></i>20</div>
+                    <div class="no-of-items"> <i class="fa-solid fa-xmark"></i> <span id="number">1</span></div>
+                </div>
+                <i class="fa-solid fa-xmark" id="remove-item-from-cart"></i>
+            </div> -->
+        </div>
+        <div class="total-amount-container">
+            <span>Total</span>
+            <div class="total-amount" id="cart-total-amount"><i class="fa-solid fa-indian-rupee-sign"></i>20</div>
+            <button class="btn"><i class="fa-regular fa-credit-card"></i>Checkout</button>
+        </div>
+    </section>
+
+    <!-- Cart Section Ends  -->
+
+    <footer>
+        <div class="col col-1">
+            <div class="icon">
+                <i class="fa-brands fa-opencart"></i>
+                <h3>Fresh Mart</h3>
+            </div>
+        </div>
+        <div class="col col-2">
+            <h2>Product catelog</h2>
+            <ul id="categories-list">
+                <!-- <li value="Category">Category</li>
+                <li value="Category">Category</li>
+                <li value="Category">Category</li> -->
+            </ul>
+        </div>
+        <div class="col col-3">
+            <h2>Company</h2>
+            <ul>
+                <li value="Category"><a href="#">Category</a></li>
+                <li value="Category"><a href="#">Category</a></li>
+                <li value="Category"><a href="#">Category</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

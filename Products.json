@@ -1,0 +1,642 @@
+{
+    "products" : [
+        {
+            "id" : 1,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Onion",
+            "type" : "vegetable",
+            "price" : 18
+        },{
+            "id" : 2,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Potato",
+            "type" : "vegetable",
+            "price" : 22
+        },{
+            "id" : 3,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Tomato",
+            "type" : "vegetable",
+            "price" : 30
+        },{
+            "id" : 4,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Chilli - Green",
+            "type" : "vegetable",
+            "price" : 8
+        },{
+            "id" : 5,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Bhendi",
+            "type" : "vegetable",
+            "price" : 34
+        },{
+            "id" : 6,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Cauliflower",
+            "type" : "vegetable",
+            "price" : 25
+        },{
+            "id" : 7,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Cabbage",
+            "type" : "vegetable",
+            "price" : 8
+        },{
+            "id" : 8,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Bottle Gourd",
+            "type" : "vegetable",
+            "price" : 28
+        },{
+            "id" : 9,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Red Cabbage",
+            "type" : "vegetable",
+            "price" : 50
+        },{
+            "id" : 10,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Bitter Gourd",
+            "type" : "vegetable",
+            "price" : 36
+        },{
+            "id" : 11,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Banana",
+            "type" : "Fruits",
+            "price" : 59
+        },{
+            "id" : 12,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Pomegranate",
+            "type" : "Fruits",
+            "price" : 196
+        },{
+            "id" : 13,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Papaya medium",
+            "type" : "Fruits",
+            "price" : 76
+        },{
+            "id" : 14,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Orange - Nagpur",
+            "type" : "Fruits",
+            "price" : 72
+        },{
+            "id" : 15,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Muskmelon",
+            "type" : "Fruits",
+            "price" : 27
+        },{
+            "id" : 16,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Orange, Valencia",
+            "type" : "Fruits",
+            "price" : 75
+        },{
+            "id" : 17,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Apple Red",
+            "type" : "Fruits",
+            "price" : 117
+
+        },{
+            "id" : 18,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Watermelon Striped",
+            "type" : "Fruits",
+            "price" : 109
+
+        },{
+            "id" : 19,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Strawberry",
+            "type" : "Fruits",
+            "price" : 43
+
+        },{
+            "id" : 20,
+            "category" : "Fruits & Vegetables",
+            "name" : "Fresh Mango",
+            "type" : "Fruits",
+            "price" : 190
+        },{
+            "id" : 21,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann Unpolished Toor Dal",
+            "type" : "Dal",
+            "price" : 159
+        },{
+            "id" : 22,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann Unpolished Moong Dal Split",
+            "type" : "Dal",
+            "price" : 151
+        },{
+            "id" : 23,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann Unpolished Chana Dal",
+            "type" : "Dal",
+            "price" : 102
+
+        },{
+            "id" : 24,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann Unpolished Green Moong Dal",
+            "type" : "Dal",
+            "price" : 154
+
+        },{
+            "id" : 25,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann Unpolished Masoor Dal Split",
+            "type" : "Dal",
+            "price" : 141
+        },{
+            "id" : 26,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Aashirvaad Select Sharbati Atta",
+            "type" : "Aata & flours",
+            "price" : 313
+        },{
+            "id" : 27,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Fortune Chakki Fresh Atta",
+            "type" : "Aata & flours",
+            "price" : 424
+        },{
+            "id" : 28,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Fortune Chana Besan",
+            "type" : "Aata & flours",
+            "price" : 92
+
+        },{
+            "id" : 29,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann Chana Dal Fine Besan",
+            "type" : "Aata & flours",
+            "price" : 91
+
+        },{
+            "id" : 30,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Organic Tattva Suji",
+            "type" : "Aata & flours",
+            "price" : 37
+        },{
+            "id" : 31,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann High in Fibre White Thick Poha",
+            "type" : "Poha",
+            "price" : 44
+        },{
+            "id" : 32,
+            "category" : "Rice, Atta & Dal",
+            "name" : "24 Mantra Organic Red Poha Erra Atukula",
+            "type" : "Poha",
+            "price" : 158
+        },{
+            "id" : 33,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Tata Sampann White Thin Poha",
+            "type" : "Poha",
+            "price" : 54
+
+        },{
+            "id" : 34,
+            "category" : "Rice, Atta & Dal",
+            "name" : "24 Mantra Organic Thin Poha",
+            "type" : "Poha",
+            "price" : 55
+        },{
+            "id" : 35,
+            "category" : "Rice, Atta & Dal",
+            "name" : "FORTUNE Thick Poha, Source of Fibre and Protein",
+            "type" : "Poha",
+            "price" : 70
+        },{
+            "id" : 36,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Daawat Rozana Super, Rich Aroma Basmati Rice",
+            "type" : "Rice",
+            "price" : 349
+        },{
+            "id" : 37,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Fortune Hamesha Basmati Rice",
+            "type" : "Rice",
+            "price" : 345
+
+        },{
+            "id" : 38,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Daawat Super, Perfectly Aged, Basmati Rice",
+            "type" : "Rice",
+            "price" : 156
+
+        },{
+            "id" : 39,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Daawat Basmati Rice, Rozana (Super)",
+            "type" : "Rice",
+            "price" : 76
+
+        },{
+            "id" : 40,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Daawat Rozana Gold, Naturally Aged, Rich Aroma,Basmati",
+            "type" : "Rice",
+            "price" : 425
+        },{
+            "id" : 41,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Organic Tattva, Organic Wheat Dalia Daliya",
+            "type" : "Whole Grain",
+            "price" : 51
+        },{
+            "id" : 42,
+            "category" : "Rice, Atta & Dal",
+            "name" : "24 Mantra Organic Corn Daliya Maize Daliya",
+            "type" : "Whole Grain",
+            "price" : 120
+        },{
+            "id" : 43,
+            "category" : "Rice, Atta & Dal",
+            "name" : "India Gate Quinoa",
+            "type" : "Whole Grain",
+            "price" : 42
+
+        },{
+            "id" : 44,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Kellogg's Oats, Rolled Oats",
+            "type" : "Whole Grain",
+            "price" : 129
+
+        },{
+            "id" : 45,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Amazon Brand - Vedaka Dalia (Broken Wheat)",
+            "type" : "Whole Grain",
+            "price" : 70
+        },{
+            "id" : 46,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Nutrela SOYA Chunks",
+            "type" : "Soya",
+            "price" : 58
+        },{
+            "id" : 47,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Nutrela Soya Granules",
+            "type" : "Soya",
+            "price" : 58
+
+        },{
+            "id" : 48,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Nutrelaa SOYA Chunks",
+            "type" : "Soya",
+            "price" : 144
+
+        },{
+            "id" : 49,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Organic Tattva Cowpea White",
+            "type" : "Soya",
+            "price" : 123
+
+        },{
+            "id" : 50,
+            "category" : "Rice, Atta & Dal",
+            "name" : "Saffola Soya Chunks, Tender & Juicy",
+            "type" : "Soya",
+            "price" : 108
+        },{
+            "id" : 51,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Fortune Sunlite Refined Sunflower Oil",
+            "type" : "Oil",
+            "price" : 144
+        },{
+            "id" : 52,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Fortune Premium Kachi Ghani Pure Mustard Oil",
+            "type" : "Oil",
+            "price" : 173
+        },{
+            "id" : 53,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Dhara Refined Sunflower Oil Pouch",
+            "type" : "Oil",
+            "price" : 149
+
+        },{
+            "id" : 54,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Saffola Gold Refined Sunflower Oil",
+            "type" : "Oil",
+            "price" : 129
+
+        },{
+            "id" : 55,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Parachute Coconut Oil",
+            "type" : "Oil",
+            "price" : 100
+        },{
+            "id" : 56,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Catch Jeera Cumin Powder",
+            "type" : "Powdered Masala",
+            "price" : 53
+        },{
+            "id" : 57,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Tata Sampann Garam Masala with Natural Oils",
+            "type" : "Powdered Masala",
+            "price" : 73
+
+        },{
+            "id" : 58,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Aashirvaad Kashmiri Mirch Powder",
+            "type" : "Powdered Masala",
+            "price" : 87
+
+        },{
+            "id" : 59,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Tata Sampann Coriander Powder",
+            "type" : "Powdered Masala",
+            "price" : 40
+
+        },{
+            "id" : 60,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Tata Sampann Turmeric Powder",
+            "type" : "Powdered Masala",
+            "price" : 33
+        },{
+            "id" : 61,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Aashirvaad Svasti Pure Cow Ghee",
+            "type" : "Ghee",
+            "price" : 620
+        },{
+            "id" : 62,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Gowardhan Ghee Jar",
+            "type" : "Ghee",
+            "price" : 383
+        },{
+            "id" : 63,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Nestle Everyday Shahi Ghee",
+            "type" : "Ghee",
+            "price" : 623
+
+        },{
+            "id" : 64,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Nutralite DoodhShakti Pure Ghee",
+            "type" : "Ghee",
+            "price" : 538
+
+        },{
+            "id" : 65,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Dabur Pure Daanedaar Cow Ghee",
+            "type" : "Ghee",
+            "price" : 667
+        },{
+            "id" : 66,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Dabur Hommade IMLI Sauce",
+            "type" : "Sauce",
+            "price" : 19
+        },{
+            "id" : 67,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Del Monte Tomato Ketchup",
+            "type" : "Sauce",
+            "price" : 94
+
+        },{
+            "id" : 68,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Ching's Schezwan Chutney",
+            "type" : "Sauce",
+            "price" : 71
+
+        },{
+            "id" : 69,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "Wingreens Farms- Pizza 'N' Pasta Sauce",
+            "type" : "Sauce",
+            "price" : 74
+        },{
+            "id" : 70,
+            "category" : "Oil, Masala & Sauce",
+            "name" : "veeba pasta pizza sauce",
+            "type" : "Sauce",
+            "price" : 82
+        },{
+            "id" : 71,
+            "category" : "Tea & Coffee",
+            "name" : "Tata Tea Gold",
+            "type" : "Tea",
+            "price" : 141
+        },{
+            "id" : 72,
+            "category" : "Tea & Coffee",
+            "name" : "Wagh Bakri Premium Spiced Tea",
+            "type" : "Tea",
+            "price" : 149
+        },{
+            "id" : 73,
+            "category" : "Tea & Coffee",
+            "name" : "Tetley Long Leaf Original Green Tea",
+            "type" : "Tea",
+            "price" : 142
+
+        },{
+            "id" : 74,
+            "category" : "Tea & Coffee",
+            "name" : "Society Tea Leaf Tea",
+            "type" : "Tea",
+            "price" : 280
+
+        },{
+            "id" : 75,
+            "category" : "Tea & Coffee",
+            "name" : "Girnar Royal Cup Tea",
+            "type" : "Tea",
+            "price" : 135
+        },{
+            "id" : 76,
+            "category" : "Tea & Coffee",
+            "name" : "Bru Instant",
+            "type" : "Coffee",
+            "price" : 108
+        },{
+            "id" : 77,
+            "category" : "Tea & Coffee",
+            "name" : "Nescafé Classic Instant Ground Coffee",
+            "type" : "Coffee",
+            "price" : 149
+        },{
+            "id" : 78,
+            "category" : "Tea & Coffee",
+            "name" : "NESCAFÉ Classic Instant Coffee, Dawn Jar",
+            "type" : "Coffee",
+            "price" : 170
+
+        },{
+            "id" : 79,
+            "category" : "Tea & Coffee",
+            "name" : "Nescafé Classic Black Roast Instant Coffee",
+            "type" : "Coffee",
+            "price" : 362
+
+        },{
+            "id" : 80,
+            "category" : "Tea & Coffee",
+            "name" : "Nescafé NESCAFE SUNRISE, Instant Ground Coffee-Chicory Mix",
+            "type" : "Coffee",
+            "price" : 380
+        },{
+            "id" : 81,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "UPF Healthy Brown Eggs, 6 Pieces",
+            "type" : "Eggs",
+            "price" : 82
+        },{
+            "id" : 82,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Farm Made Free Range Eggs, 12 Pieces",
+            "type" : "Eggs",
+            "price" : 250
+        },{
+            "id" : 83,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Fresh Eggs, Pack of 30",
+            "type" : "Eggs",
+            "price" : 209
+
+        },{
+            "id" : 84,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Rupchanda,Roopchand Steaks",
+            "type" : "Fish",
+            "price" : 259
+
+        },{
+            "id" : 85,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Tilapia,Jalebi Fish Large Curry Cut",
+            "type" : "Fish",
+            "price" : 135
+        },{
+            "id" : 86,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Rupchanda,Roopchand Curry Cut",
+            "type" : "Fish",
+            "price" : 194
+        },{
+            "id" : 87,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "FreshPick Basa Fish Fillet",
+            "type" : "Fish",
+            "price" : 259
+        },{
+            "id" : 88,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Rohu Fish Bengali Slices",
+            "type" : "Fish",
+            "price" : 199
+
+        },{
+            "id" : 89,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Meaty Mutton Kakori Kebabs",
+            "type" : "Mutton",
+            "price" : 334
+
+        },{
+            "id" : 90,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Mutton Curry Cut",
+            "type" : "Mutton",
+            "price" : 459
+        },{
+            "id" : 91,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Premium Chicken Breast Fillet",
+            "type" : "Chicken",
+            "price" : 225
+        },{
+            "id" : 92,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Premium Chicken Curry Cut",
+            "type" : "Chicken",
+            "price" : 139
+        },{
+            "id" : 93,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Premium Chicken Gizzard",
+            "type" : "Chicken",
+            "price" : 109
+
+        },{
+            "id" : 94,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Meaty Chicken Punjabi Seekh Kebab",
+            "type" : "Chicken",
+            "price" : 222
+
+        },{
+            "id" : 95,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Premium Chicken Lollipop",
+            "type" : "Chicken",
+            "price" : 198
+        },{
+            "id" : 96,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "ITC Master Chef Chicken Seekh Kebab",
+            "type" : "Frozen Chicken",
+            "price" : 245
+        },{
+            "id" : 97,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Godrej Yummiez Chicken Burger Patty",
+            "type" : "Frozen Chicken",
+            "price" : 170
+        },{
+            "id" : 99,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Godrej Yummiez Chicken Cheese and Onion Sausage Pouch",
+            "type" : "Frozen Chicken",
+            "price" : 159
+
+        },{
+            "id" : 99,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Godrej Yummiez Chicken and Cheese Nuggets Pouch",
+            "type" : "Frozen Chicken",
+            "price" : 241
+
+        },{
+            "id" : 100,
+            "category" : "Eggs, Meat & Fish",
+            "name" : "Godrej Yummiez Chicken Breakfast Salami Pouch",
+            "type" : "Frozen Chicken",
+            "price" : 145
+        }
+    ]
+}
