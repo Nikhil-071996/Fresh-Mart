@@ -856,18 +856,28 @@ header .right-section .menu-in-small-screen .menu .social-media i{
         font-size: 18px;
     }
 }
+@media (max-width:2000px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media (max-width:1650px) {
+    html{
+        font-size: 12.5px;
+    }
+}
 @media (max-width:1440px) {
     html{
         font-size: 10px;
     }
     
 }
-@media (max-width:1024px) {
+@media (max-width:1085px) {
     html{
         font-size: 7.8px;
     }  
 }
-@media (max-width:768px) {
+@media (max-width:850px) {
     html{
         font-size: 6.8px;
     }  
@@ -888,7 +898,7 @@ header .right-section .menu-in-small-screen .menu .social-media i{
         display: block;
     }
 }
-@media (max-width:425px) {
+@media (max-width:540px) {
     header .left-section{
         width: 40%;
     }
@@ -972,7 +982,7 @@ header .right-section .menu-in-small-screen .menu .social-media i{
         width: 70%;
     }
 } 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
     html{
         font-size: 6.7px;
     } 
@@ -988,7 +998,9 @@ header .right-section .menu-in-small-screen .menu .social-media i{
         justify-content: flex-start;
     }
     .center-body-section .products .product-card{
-        width: 35rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
     }
     .center-body-section .products .product-card .fa-heart{
         font-size: 2.5rem;
@@ -997,7 +1009,7 @@ header .right-section .menu-in-small-screen .menu .social-media i{
         font-size: 2.5rem;
     }
     .center-body-section .products .product-card p{
-        font-size: 2rem;
+        display: none;
     }
     .center-body-section .products .product-card h4{
         font-size: 2.5rem;
@@ -1030,5 +1042,13 @@ header .right-section .menu-in-small-screen .menu .social-media i{
         font-size: 2.3rem;
         gap: 0rem;
         padding: 1rem;
+    }
+    .center-body-section .products .product-card{
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .center-body-section .products .product-card p{
+        display: block;
     }
 } 

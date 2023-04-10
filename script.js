@@ -119,14 +119,13 @@ async function fetchData(url){
         createElements(products)
         createCategoriesList(products)
     }catch(error){
-        const Error = document.createElement('div')
-        Error.classList.add('no-items-found')
-
+        error = document.createElement('div')
+        error.classList.add('no-items-found')
         const msg = document.createElement('h1')
-        msg.innerText = 'Sorry No Items Found'
-        Error.appendChild(msg)
+        msg.innerText = 'Failed to Load Data'
+        error.appendChild(msg)
         productsEl.innerHTML = ''
-        productsEl.appendChild(Error)
+        productsEl.appendChild(error)
     }
 }
 
@@ -154,7 +153,6 @@ function createCategoriesList(products){
 
 function filterByCategories(){
     if(categoriesSelectEl !== null){
-        
         categoriesSelectEl.addEventListener('change' , e => {
             let categoryValue = e.target.value.toLowerCase()
             searchFilter.forEach(product => {
@@ -584,51 +582,3 @@ SignInForm.addEventListener('submit' , e => {
         loginFirstMsgPopup.classList.add('hide')
     }, 3000);
 })
-
-
-// Handle Upload Image 
- 
-const fileSelector = document.querySelectorAll('#file')
-const imgBox = document.querySelectorAll('#ImageBox')
-let imgBoxArray = Array.from(imgBox)
-
-let image = loadImage()
-
-
-fileSelector.forEach(file => {
-    file.addEventListener('change' , () => {
-
-    const imageUrl = file.files[0];
-
-        if(imageUrl){
-            const reader = new FileReader();
-            reader.addEventListener('load' , () =>{
-               image =  imgBoxArray.map(img => {
-                    img.setAttribute('src' , reader.result)
-                    return reader.result
-                })
-                saveImage()
-            })
-            reader.readAsDataURL(imageUrl)
-        }
-    })
-})
-
-
-function saveImage(){
-    localStorage.setItem('image' , JSON.stringify(image))
-    console.log(image)
-}
-
-function loadImage(){
-    const image = localStorage.getItem('image')
-    return JSON.parse(image) || []
-    
-}
-
-function setImage(){
-    imgBox.forEach(img => {
-        img.setAttribute('src' , image[0])
-    })
-}
-setImage()
