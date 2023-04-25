@@ -19,15 +19,43 @@ searchInput.addEventListener('blur' , () => {
     searchForm.classList.remove('focus')  
 })
 
-    searchInputToggleBtn.addEventListener('click' , () => {
-        if(searchInput.classList == 'show'){
-            searchInput.classList.remove('show')
-            searchInputToggleBtn.classList.replace('fa-xmark' , 'fa-magnifying-glass')
-        }else{
-            searchInput.classList.add('show')
-            searchInputToggleBtn.classList.replace('fa-magnifying-glass' , 'fa-xmark')
+searchInputToggleBtn.addEventListener('click' , () => {
+    if(searchInput.classList == 'show'){
+        searchInput.classList.remove('show')
+        searchInputToggleBtn.classList.replace('fa-xmark' , 'fa-magnifying-glass')
+    }else{
+        searchInput.classList.add('show')
+        searchInputToggleBtn.classList.replace('fa-magnifying-glass' , 'fa-xmark')
+
+    }
+})
+}
+
+// Adding Function to Search Input 
+
+if(searchForm !== null){
+    searchForm.addEventListener('submit' , e => {
+        e.preventDefault()
+        let searchValue = searchInput.value.toLowerCase()
+        let filteredProduct =  products.filter(product => {
+            return product.name.toLowerCase().includes(searchValue) || product.type.toLowerCase().includes(searchValue)
+        })
+        if(filteredProduct.length === 0){
+            if(productsEl !== null){
+                const noItemsFound = document.createElement('div')
+                noItemsFound.classList.add('no-items-found')
     
+                const msg = document.createElement('h1')
+                msg.innerText = 'Sorry No Items Found'
+                noItemsFound.appendChild(msg)
+                productsEl.innerHTML = ''
+                productsEl.appendChild(noItemsFound)
+            }
+        }else{
+            productsEl.innerHTML = ''
+            createElements(filteredProduct)
         }
+        searchInput.value = ''
     })
 }
 
@@ -98,6 +126,7 @@ SignUpBtn.addEventListener('click', () => {
 
 
 // Fetching Data From Products.json 
+
 const URL = 'Products.json'
 fetchData(URL)
 
@@ -107,9 +136,8 @@ const categoriesSelectEl = document.getElementById('select-categories')
 const categoriesListEl = document.getElementById('categories-list')
 
 
-let products = []
-
-let searchFilter = []
+let products = [];
+let searchFilter = [];
 
 async function fetchData(url){
     try{
@@ -153,33 +181,19 @@ function createCategoriesList(products){
 
 function filterByCategories(){
     if(categoriesSelectEl !== null){
-        categoriesSelectEl.addEventListener('change' , e => {
-            let categoryValue = e.target.value.toLowerCase()
-            searchFilter.forEach(product => {
+        categoriesSelectEl.addEventListener('change' , (e) => {
+                let category = e.target.value.toLowerCase();
+                let filteredProducts =  products.filter(product => product.category.toLowerCase().includes(category))
                 if(e.target.value == 'All Categories'){
-                    product.element.classList.remove('hide')
+                    productsEl.innerHTML = ''
+                    createElements(products)
                 }else{
-                    const isVisible = product.category.toLowerCase().includes(categoryValue)
-                    product.element.classList.toggle('hide' , !isVisible)
+                    productsEl.innerHTML = ''
+                    createElements(filteredProducts)
                 }
-            })
-            
         })
     }
-
-    let categoriesList = categoriesListEl.querySelectorAll('li')
-
-    categoriesList.forEach(list => {
-        list.addEventListener('click' , e => {
-            let categoryValue = e.target.innerText.toLowerCase()
-            searchFilter.forEach(product => {
-                const isVisible = product.category.toLowerCase().includes(categoryValue)
-                product.element.classList.toggle('hide' , !isVisible)
-            })
-        })
-    })
 }
-
 
 // Creating Product Elements 
 
@@ -207,33 +221,6 @@ function createElements(products){
             productsEl.appendChild(productCardEl)
         }
         return { name : product.name , type : product.type , element : productCardEl , price : product.price , category : product.category}
-    })
-}
-// Adding Function to Search Input 
-
-if(searchForm !== null){
-    searchForm.addEventListener('submit' , e => {
-        e.preventDefault()
-        let searchValue = searchInput.value.toLowerCase()
-        let filteredProduct =  products.filter(product => {
-            return product.name.toLowerCase().includes(searchValue) || product.type.toLowerCase().includes(searchValue)
-        })
-        if(filteredProduct.length === 0){
-            if(productsEl !== null){
-                const noItemsFound = document.createElement('div')
-                noItemsFound.classList.add('no-items-found')
-    
-                const msg = document.createElement('h1')
-                msg.innerText = 'Sorry No Items Found'
-                noItemsFound.appendChild(msg)
-                productsEl.innerHTML = ''
-                productsEl.appendChild(noItemsFound)
-            }
-        }else{
-            productsEl.innerHTML = ''
-            createElements(filteredProduct)
-        }
-        searchInput.value = ''
     })
 }
 
@@ -314,8 +301,6 @@ function showHideCart(){
     }
 }
 showHideCart()
-
-
 
 function updateCart(){
     itemContainer.innerHTML = ''
@@ -408,9 +393,8 @@ toggleWishListTable()
 function updateWishList(){
     if(tableBody !== null){
         tableBody.innerHTML = ''
-    }
-    wishList.forEach(item => {
-        const tableRow = document.createElement('tr')
+        wishList.forEach(item => {
+            const tableRow = document.createElement('tr')
 
         tableRow.innerHTML = `
             <td class="img-container">
@@ -424,10 +408,9 @@ function updateWishList(){
             <td>
             <i class="fa-solid fa-xmark" id="remove-item-from-cart" onclick="removeItemsFromWishList(${item.id})"></i>
             </td>`
-            if(tableBody !== null){
                 tableBody.appendChild(tableRow)
-            }
-    })
+        })
+    }
 }
 
 function removeItemsFromWishList(id){
