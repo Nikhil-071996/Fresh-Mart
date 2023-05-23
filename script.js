@@ -1,4 +1,4 @@
-//  Handle window preloader
+tu//  Handle window preloader
 
 const preloader = document.getElementById('preloader')
 
@@ -232,9 +232,7 @@ const expensiveBtn = document.getElementById('expensive');
 
 if(cheapBtn !== null && expensiveBtn !== null){
     cheapBtn.addEventListener('click' , () => {
-        searchFilter.forEach(product => {
-            product.element.classList.add('hide')
-        })
+        productsEl.innerHTML = '';
         products.sort((a , b) => {
             return a.price - b.price
         })
@@ -242,9 +240,7 @@ if(cheapBtn !== null && expensiveBtn !== null){
     })
 
     expensiveBtn.addEventListener('click' , () => {
-        searchFilter.forEach(product => {
-            product.element.classList.add('hide')
-        })
+        productsEl.innerHTML = ''
         products.sort((a , b) => {
             return b.price - a.price
         })
